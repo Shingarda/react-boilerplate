@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 
-export default class App extends React.Component {
-    constructor(props) {
+export default class App extends React.Component<any, any> {
+    constructor(props: any) {
         super(props);
         this.state = {
             inputValue: ''
@@ -9,7 +9,7 @@ export default class App extends React.Component {
         this.handler = this.handler.bind(this);
     }
 
-    handler(input) {
+    handler(input: any) {
         this.setState({
             inputValue: input
         });
